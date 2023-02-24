@@ -314,7 +314,7 @@ body {
 .logo {
   width: 400px;
   border: 10px;
-  transform: translateX(50px);
+  transform: translateX(45px);
 }
 
 
@@ -422,7 +422,7 @@ body {
 
 .gallery {
   transform: translateY(50%);
-  transform: translateX(50px);
+  transform: translateX(45px);
   padding: 20px;
 }
 
