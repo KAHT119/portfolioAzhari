@@ -302,7 +302,7 @@ body {
 
 /* for phone */
 
-@media (max-width: 414px)
+@media (max-width: 600px)
 {
   .container .card
   {
@@ -314,7 +314,7 @@ body {
 .logo {
   width: 400px;
   border: 10px;
-  transform: translateX(80px);
+  transform: translateX(50px);
 }
 
 
@@ -421,7 +421,8 @@ body {
 }
 
 .gallery {
-  transform: translateX(80px);
+  transform: translateY(50%);
+  transform: translateX(50px);
   padding: 20px;
 }
 
