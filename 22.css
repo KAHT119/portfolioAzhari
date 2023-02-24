@@ -1,0 +1,151 @@
+
+
+
+/* body */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+
+  .flex-item-bottom {
+    padding: 10px;
+    flex: 50%;
+  }
+
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
+  /* this one is for the red hover box */
+
+  .container1 {
+    width: 300px;
+    height: 120px;
+    transition: height 0.5s;
+    background-color: rgb(116, 4, 4);
+    border-radius: 30px;
+  }
+  
+  .container1:hover {
+    height: 600px;
+   }
+   
+  #tagb {
+    width: 300px;
+    height: 180px;
+  }
+  
+  
+  .container1 .card .content
+  {
+    top: 20%;
+    padding: -20px -20px -20px -40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    justify-content: center;
+  }
+  
+  .container1 .card:hover .content
+  {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .container1 .card .content h2
+  {
+    color: rgb(247, 247, 247);
+    font-size: 50px;
+    line-height: 10px;
+    padding: 70px;
+  }
+  
+  .container1 .card .content p
+  {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  
+
+  /* sec*/
+
+  .container2 {
+    width: 300px;
+    height: 120px;
+    transition: height 0.5s;
+    background-color: rgb(116, 4, 4);
+    border-radius: 30px;
+  }
+  
+  .container2:hover {
+    height: 600px;
+   }
+   
+  #tagb {
+    width: 300px;
+    height: 180px;
+  }
+  
+  
+  .container2 .card .content
+  {
+    top: 20%;
+    padding: -20px -20px -20px -40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    justify-content: center;
+  }
+  
+  .container2 .card:hover .content
+  {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .container2 .card .content h2
+  {
+    color: rgb(247, 247, 247);
+    font-size: 50px;
+    line-height: 10px;
+    padding: 70px;
+  }
+  
+  .container2 .card .content p
+  {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  

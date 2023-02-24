@@ -1,0 +1,451 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Style the header */
+.header {
+  border: none;
+  justify-content: center;
+  transform: translateX(-45px);
+}
+
+.column1 {
+  color: #f1f1f1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.column {
+  color: #f1f1f1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.logo {
+  width: 400px;
+  border: 10px;
+}
+
+.gallery {
+  align-items: center;
+  justify-content: center;
+  transform: translateX(200px);
+}
+
+.item1 {
+  width: 400px;
+  border: 10px;
+}
+.item2 {
+  width: 423px;
+  border: 10px;
+}
+.item3 {
+  width: 423px;
+  border: 10px;
+}
+.item4 {
+  width: 199px;
+  border: 10px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 700px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 700px;
+}
+
+.column3 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 700px;
+  align-items: center;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.textfooter {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow:  grey;
+  color: #f1f1f1;
+}
+
+.logo1 {
+  width: 200px;
+  border: 10px;
+}
+
+/* Responsive layout 
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} */
+
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  opacity: 100%;
+  z-index: -3;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container .card
+{
+  position: static;
+  width: 100%;
+  height: 400px;
+  margin: 100px;
+  display: flex;
+  transition: 0.5s;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 2%;
+  /*ackground: radial-gradient(circle, #ff0000,#000000);*/
+}
+
+.container .card .no1
+{
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 450px;
+  transition: 0.5s;
+}
+
+
+.container .card:hover .no1
+{
+  left: 75%;
+  height: 650px;
+}
+
+.container .card .content
+{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .content
+{
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.container .card .content h2
+{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.container .card .content p
+{
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+}
+
+
+/* sec section */
+
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container1 .card1
+{
+  position: static;
+  width: 100%;
+  height: 400px;
+  margin: 70px;
+  display: flex;
+  transition: 0.5s;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 2%;
+}
+
+/* sec and first img */
+
+.container1 .card1 .first
+{
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+  transform: translateX(-25%);
+  height: 300px;
+  transition: 1s;
+}
+
+.container1 .card1 .sec
+{
+  position: absolute;
+  bottom: 0%;
+  right: 40%;
+  transform: translateX(25%);
+  height: 300px;
+  transition: 1s;
+}
+
+
+/* animation */
+
+.container1 .card1:hover .first
+{
+  left: 10%;
+  height: 400px;
+}
+
+.container1 .card1:hover .sec
+{
+  right: 10%;
+  height: 400px;
+}
+
+/* sec and first img */
+
+.container1 .card1 .content1
+{
+  position: static;
+  width: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+
+
+.container1 .card1:hover .content1
+{
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+.container1 .card1 .content1 .text
+{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 2.5em;
+  text-align: center;
+  transform: translateX(50%);
+  padding: 40px;
+}
+
+.container1 .card1 .content1 .text2
+{
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  text-align: center;
+  transform: translateX(50%);
+  padding: 40px;
+}
+
+
+/* for phone */
+
+@media (max-width: 600px)
+{
+  .container .card
+  {
+    width: auto;
+    max-width: 600px;
+    align-items: flex-start;
+  }
+  
+
+
+
+  .container .card:hover
+  {
+    height: 300px;
+
+  }
+  .container .card:hover .no1
+  {
+    left: 50%;
+    height: 300px;
+    opacity: 0;
+  }
+
+
+  .container .card .content
+  {
+    width: 110%;
+    left: 0;
+    padding: 20px;
+  }
+
+  .container .card .content p
+{
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+/* sec animation */
+
+.container1 .card1
+  {
+    width: auto;
+    max-width: 600px;
+    align-items: flex-start;
+  }
+  .container1 .card1:hover
+  {
+    height: 200px;
+
+  }
+  .container1 .card1:hover .first
+  {
+    top: -58px;
+    height: 250px;
+    opacity: 1;
+    rotate: 115deg;
+    transform: translateY(25%);
+  }
+
+  .container1 .card1:hover .sec
+  {
+    bottom: -380px;
+    height: 250px;
+    transform: translateY(-40%);
+    opacity: 1;
+    rotate: 115deg;
+  }
+
+  .container1 .card1 .content1
+  {
+    width: 100%;
+    left: 0;
+    padding: 40px;
+  }
+
+  .container1 .card1 .content1 
+{
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+.container1 .card1 .content1 .text
+{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  transform: translateY(90px);
+  padding: 10px;
+}
+
+.container1 .card1 .content1 .text2
+{
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  text-align: center;
+  transform: translateY(80px);
+  padding: 10px;
+}
+
+
+/* third collum */
+
+.column3 {
+  height: 1200px;
+  border: 10px;
+  padding: 30px;
+}
+.textfooter {
+  border: 10px;
+  padding: 10px;
+}
+
+.gallery {
+  transform: translateY(50%);
+  transform: translateX(-5px);
+  padding: 20px;
+}
+
+.item1 {
+  width: 200px;
+  border: 10px;
+  padding: 10px;
+}
+.item2 {
+  width: 200px;
+  border: 10px;
+  padding: 10px;
+}
+.item3 {
+  width: 200px;
+  border: 10px;
+  padding: 10px;
+}
+.item4 {
+  width: 199px;
+  border: 10px;
+  padding: 10px;
+}
+
+
+
+
+}
+
+/* for phone again */
