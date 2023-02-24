@@ -302,7 +302,7 @@ body {
 
 /* for phone */
 
-@media (max-width: 600px)
+@media (max-width: 414px)
 {
   .container .card
   {
