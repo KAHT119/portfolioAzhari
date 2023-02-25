@@ -359,18 +359,18 @@ body {
   }
   .container1 .card1:hover .first
   {
-    top: -58px;
+    top: -120px;
     height: 250px;
     opacity: 1;
     rotate: 115deg;
-    transform: translateY(25%);
+    transform: translate(10%);
   }
 
   .container1 .card1:hover .sec
   {
-    bottom: -380px;
+    bottom: -550px;
     height: 250px;
-    transform: translateY(-40%);
+    transform: translate(-45%);
     opacity: 1;
     rotate: 115deg;
   }
